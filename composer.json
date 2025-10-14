@@ -7,14 +7,21 @@
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "symfony/cache": "7.3.*",
         "symfony/console": "7.3.*",
         "symfony/dotenv": "7.3.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.3.*",
+        "symfony/http-client": "7.3.*",
+        "symfony/http-foundation": "7.3.*",
+        "symfony/monolog-bundle": "^3.10",
+        "symfony/routing": "7.3.*",
         "symfony/runtime": "7.3.*",
         "symfony/yaml": "7.3.*"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.88",
+        "symfony/maker-bundle": "^1.64"
     },
     "config": {
         "allow-plugins": {
@@ -55,7 +62,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "fix:cs": "./vendor/bin/php-cs-fixer fix src"
     },
     "conflict": {
         "symfony/symfony": "*"

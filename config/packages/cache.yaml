@@ -17,3 +17,6 @@ framework:
         # Namespaced pools use the above "app" backend by default
         #pools:
             #my.dedicated.cache: null
+
+        # Default cache as filesystem var/cache
+        app: cache.adapter.filesystem
