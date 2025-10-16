@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;
 
 /**
- * Controller to call the weather service based on query parameters
+ * Controller to call the weather service based on query parameters.
  *
  * @param Request        $request        The request object
  * @param WeatherService $weatherService The weather service

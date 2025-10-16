@@ -22,12 +22,11 @@ class WeatherService
     public function __construct(
         private WeatherApiClientInterface $client,
         private CacheInterface $cache,
-    ) {
-    }
+    ) {}
 
     public function getWeather(array $params): array
     {
-        $cacheKey = 'app:weather_'.md5(json_encode($params));
+        $cacheKey = 'app_weather_' . md5(json_encode($params));
 
         // CacheInterface::get atomic cachekey lock to prevent race condition from multi request trying to set cache
         return $this->cache->get($cacheKey, function ($item) use ($params) {

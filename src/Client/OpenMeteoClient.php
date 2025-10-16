@@ -6,12 +6,12 @@ use App\Interface\WeatherApiClientInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
- * Client for OpenMeteo weather API
+ * Client for OpenMeteo weather API.
  */
 class OpenMeteoClient implements WeatherApiClientInterface
 {
     /**
-     * Base URL for the OpenMeteo API
+     * Base URL for the OpenMeteo API.
      */
     private const API_BASE_URL = 'https://api.open-meteo.com/v1';
 
@@ -20,7 +20,7 @@ class OpenMeteoClient implements WeatherApiClientInterface
     }
 
     /**
-     * Fetch the weather forecast data from OpenMeteo API for given parameters
+     * Fetch the weather forecast data from OpenMeteo API for given parameters.
      *
      * @param array $params Parameters to fetch weather data for
      *                      - 'latitude' (float)   The latitude coordinate to fetch weather data for
