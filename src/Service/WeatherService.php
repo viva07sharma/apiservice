@@ -7,15 +7,15 @@ use Symfony\Contracts\Cache\CacheInterface;
 
 /**
  * WeatherService
- * Fetchs from cache first if available, otherwise fetchs from weather data API Clien (injected via DI) and cache the result for 5 minutes
- * Uses CacheInterface to cache the result (via cache adapter in services.yaml).
+ * Fetchs from cache first if available, otherwise fetchs from weather data API Client (injected via DI) and cache the result for 5 minutes
+ * Uses CacheInterface to cache the result (via cache adapter in cache package)
  *
  * @return Returns weather data as array or throw exception if API error
  */
 class WeatherService
 {
     /**
-     * 5 minutes cache time.
+     * 5 minutes cache time
      */
     private const CACHE_TTL = 300;
 
