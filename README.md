@@ -87,3 +87,4 @@ Notes
 -----
 - The repo includes unit and functional tests under `tests/Unit` and `tests/Functional`.
 - `phpunit.xml.dist` defines separate test suites so you can run `--testsuite unit` / `functional`.
+- Cache use is filesystem (Symfony default), to switch to redis cache adapter enable in cache.yaml.
