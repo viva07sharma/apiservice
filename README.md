@@ -83,7 +83,6 @@ APP_ENV=test APP_DEBUG=1  vendor/bin/simple-phpunit --testdox
 APP_ENV=test APP_DEBUG=1  php -dxdebug.mode=coverage vendor/bin/simple-phpunit --testdox --coverage-text
 ```
 
-For coverage add ``
 Notes
 -----
 - The repo includes unit and functional tests under `tests/Unit` and `tests/Functional`.
