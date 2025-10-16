@@ -1,0 +1,7 @@
+vendor
+var/cache
+var/log
+.env.local
+.git
+.idea
+node_modules
